@@ -76,7 +76,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_wasabi
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
-
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -167,3 +167,5 @@ BOARD_VNDK_VERSION := current
 
 # Inherit from the proprietary version
 -include vendor/realme/wasabi/BoardConfigVendor.mk
+
+

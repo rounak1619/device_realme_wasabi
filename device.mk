@@ -134,3 +134,7 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(DEVICE_PATH)/properties.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
+#override aosp apps
+GAPPS_FORCE_PACKAGE_OVERRIDES := true	
+$(call inherit-product, vendor/gapps/config.mk)
