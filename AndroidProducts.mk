@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_wasabi.mk
+    $(LOCAL_DIR)/cesium_wasabi.mk
+
+COMMON_LUNCH_CHOICES := \
+   cesium_wasabi-eng \
+   cesium_wasabi-userdebug \
+   cesium_wasabi-user
