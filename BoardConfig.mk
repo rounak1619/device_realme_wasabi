@@ -39,6 +39,10 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 TARGET_FLATTEN_APEX := false
 OVERRIDE_TARGET_FLATTEN_APEX := false
 
+# Broken rules
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
