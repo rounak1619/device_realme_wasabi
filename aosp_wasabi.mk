@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The Evolution X Project
+# Copyright (C) 2020 The AOSP  Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,17 +21,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from wasabi device makefile
 $(call inherit-product, device/realme/wasabi/device.mk)
 
-# Inherit some common Evolution X stuff.
-EVO_BUILD_TYPE := UNOFFICIAL
+# Inherit some common Evolution X stuff
+CUSTOM_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_WIFI_EXT := true
-CESIUM_MAINTAINER := ashuk1109
-$(call inherit-product, vendor/cesium/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cesium_wasabi
+PRODUCT_NAME := aosp_wasabi
 PRODUCT_DEVICE := wasabi
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := G90T Series
