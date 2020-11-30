@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <cstring.h>
+#include <string.h>
 #include <sys/sysinfo.h>
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
